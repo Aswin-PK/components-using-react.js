@@ -1,6 +1,7 @@
 import './App.css'
 import Accordion from './Components/Accordion'
 import RandomColor from './Components/RandomColorGenerator'
+import RatingSelection from './Components/RatingSelection'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Accordion />
       <RandomColor />
+      <RatingSelection />
     </>
   )
 }

@@ -22,26 +22,28 @@ export default function Accordion() {
         }
     }
     
-    return <div className="wrapper">
-        <button className="multi-selection" onClick={()=>setMultiselection(!multiselection)}>Select Multiple Items {multiselection && <span style={{color: 'green'}}>(on)</span>}</button>
-        {
-            data && data.length > 0 ? (
-                data.map((currentQuestion, index) => (
-                    <>
-                        <div className="accordion" key={index} onClick={()=>handleSelection(currentQuestion.id)}>
-                            <span>{currentQuestion.question}</span>
-                            <span>+</span>
-                        </div>
-                        {
-                            selection === currentQuestion.id || 
-                            multiple.indexOf(currentQuestion.id) !== -1 ?(
-                                <span className='answer'>{currentQuestion.answer}</span>
-                            ): null
-                        }
-                    </>
-                ))
-            )
-            : <span>No data found</span>
-        }
+    return <div className='accordion-container'>
+        <div className="accordion-wrapper">
+            <button className="multi-selection" onClick={()=>setMultiselection(!multiselection)}>Select Multiple Items {multiselection && <span style={{color: 'green'}}>(on)</span>}</button>
+            {
+                data && data.length > 0 ? (
+                    data.map((currentQuestion, index) => (
+                        <>
+                            <div className="accordion" key={index} onClick={()=>handleSelection(currentQuestion.id)}>
+                                <span>{currentQuestion.question}</span>
+                                <span>+</span>
+                            </div>
+                            {
+                                selection === currentQuestion.id || 
+                                multiple.indexOf(currentQuestion.id) !== -1 ?(
+                                    <span className='answer'>{currentQuestion.answer}</span>
+                                ): null
+                            }
+                        </>
+                    ))
+                )
+                : <span>No data found</span>
+            }
+        </div>
     </div>
 }

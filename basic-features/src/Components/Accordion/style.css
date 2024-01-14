@@ -1,15 +1,23 @@
-.wrapper {
+.accordion-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+}
+.accordion-wrapper {
     width: 40rem;
     height: auto;
 }
-.multi-selection {
+
+.accordion-wrapper .multi-selection {
     padding: 0.3rem 1rem;
     margin: auto;
     cursor: pointer;
 }
 
-.accordion,
-.answer {
+.accordion-wrapper .accordion,
+.accordion-wrapper .answer {
     font-size: 1.2rem;
     height: 3.5rem;
     width: 100%;
@@ -23,7 +31,7 @@
     color: #656565;
     cursor: pointer;
 }
-.answer {
+.accordion-wrapper .answer {
     height: 4rem;
     margin-top: -0.5rem;
     color: #969696;
