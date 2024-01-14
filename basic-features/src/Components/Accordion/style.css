@@ -1,0 +1,31 @@
+.wrapper {
+    width: 40rem;
+    height: auto;
+}
+.multi-selection {
+    padding: 0.3rem 1rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+.accordion,
+.answer {
+    font-size: 1.2rem;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 0.4rem;
+    color: #656565;
+    cursor: pointer;
+}
+.answer {
+    height: 4rem;
+    margin-top: -0.5rem;
+    color: #969696;
+    cursor: auto;
+}
