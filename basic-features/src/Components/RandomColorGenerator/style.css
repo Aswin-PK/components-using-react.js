@@ -1,0 +1,25 @@
+.container{
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem;
+    gap: 3rem;
+}
+button {
+    min-width: 8rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+}
