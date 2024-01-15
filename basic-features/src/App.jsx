@@ -1,4 +1,5 @@
 import './App.css'
+import LoadMoreItems from './Components/LoadMoreItems'
 import ImageSlider from './Components/ImageSlider'
 import Accordion from './Components/Accordion'
 import RandomColor from './Components/RandomColorGenerator'
@@ -12,6 +13,7 @@ function App() {
       <RandomColor />
       <RatingSelection />
       <ImageSlider url={'https://picsum.photos/v2/list'} limit={5}/>
+      <LoadMoreItems url={'https://dummyjson.com/products'} limit={20}/>
     </>
   )
 }

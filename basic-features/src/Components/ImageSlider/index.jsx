@@ -8,19 +8,15 @@ export default function ImageSlider({url, limit=5}) {
     const [images, setImages] = useState([]);
     const [currentslide, setCurrentSlide] = useState(0);
     const [errormessage, setErrorMessage] = useState(null);
-    const [loading, setLoading] = useState(false);
 
     async function fetchImages(getUrl) {
         try{
             const data = await fetch(`${getUrl}?page=1&limit=${limit}`).then(response => response.json());
-            console.log(data)
             if(data) {
                 setImages(data)
-                setLoading(false)
             }
         }catch (e) {
             setErrorMessage(e.message);
-            setLoading(false);
         }
     }
     useEffect(()=>{

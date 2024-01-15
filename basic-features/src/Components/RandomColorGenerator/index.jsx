@@ -20,7 +20,6 @@ export default function RandomColor() {
             for (let i = 0; i < 6; i++) {
                 hex += hexValues[RandomColorUtlity(hexValues.length)];                
             }
-            console.log('hex', hex)
             setColor(hex);
         }
         else {
