@@ -1,6 +1,5 @@
 .random-color-container{
     height: 100svh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: start;

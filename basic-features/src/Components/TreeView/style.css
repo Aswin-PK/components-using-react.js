@@ -1,0 +1,47 @@
+.tree-view-container {
+    height: 90svh;
+}
+.sidebar{
+    height: 100%;
+    width: 20rem;
+    background-color: rgb(156, 156, 156);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+.menu-item span{
+    background-color: rgb(206, 206, 206);
+    width: 10rem;
+    font-size: 1.2rem;
+    color: rgb(91, 91, 91);
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+.menu-item:first-child{
+    margin-top: 0.5rem;
+}
+.menu-item span:hover {
+    background-color: #e4e4e4;
+}
+
+
+.menu-item span p:nth-child(2) {
+    width: 1.8rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
