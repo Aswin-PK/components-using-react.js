@@ -1,0 +1,26 @@
+.qr-generator-container {
+    height: 80svh;
+    background-color: rgb(113, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.qrcode {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 1rem;
+}
+.qrcode input,
+.qrcode button {
+    height: 2rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 0.8rem;
+}
+.qrcode button {
+    width: 8rem;
+}
