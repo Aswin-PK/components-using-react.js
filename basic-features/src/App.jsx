@@ -5,19 +5,25 @@ import './App.css'
 // import ImageSlider from './Components/ImageSlider'
 // import LoadMoreItems from './Components/LoadMoreItems'
 // import TreeView from './Components/TreeView'
-import QRCodeGenerator from './Components/QRCodeGenerator'
+// import QRCodeGenerator from './Components/QRCodeGenerator'
+// import ThemeChanger from './Components/ThemeChange'
+// import ScrollIndicator from './Components/ScrollIndicator'
+import TabsTest from './Components/CustomTabs/tab-test'
 
 function App() {
 
   return (
     <>
-      {/* <Accordion />
-      <RandomColor />
-      <RatingSelection />
-      <ImageSlider url={'https://picsum.photos/v2/list'} limit={5}/>
-      <LoadMoreItems url={'https://dummyjson.com/products'} limit={20}/>
-      <TreeView /> */}
-      <QRCodeGenerator />
+      {/* <Accordion /> */}
+      {/* <RandomColor /> */}
+      {/* <RatingSelection /> */}
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={5}/> */}
+      {/* <LoadMoreItems url={'https://dummyjson.com/products'} limit={20}/> */}
+      {/* <TreeView /> */}
+      {/* <QRCodeGenerator /> */}
+      {/* <ThemeChanger /> */}
+      {/* <ScrollIndicator /> */}
+      <TabsTest />
     </>
   )
 }
