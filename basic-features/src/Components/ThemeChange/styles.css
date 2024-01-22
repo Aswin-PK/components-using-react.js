@@ -1,0 +1,47 @@
+:root {
+    --background : #f2f2f2;
+    --text-primary : #333;
+    --button-bg : #333;
+    --button-text : #f2f2f2;
+}
+[data-theme = 'dark'] {
+    --background : #333;
+    --text-primary : #f2f2f2;
+    --button-bg : #f2f2f2;
+    --button-text : #333;
+}
+
+
+.light-dark-mode-container {
+    background-color: var(--background);
+    height: 100svh;
+    position: relative;
+    transition: all 0.5s;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.8rem 2rem;
+    position: absolute;
+}
+.navbar button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+.hero-banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+}
+.hero-banner span {
+    color: var(--text-primary);
+    font-size: 4rem;
+    font-family: 'Arial';
+}
