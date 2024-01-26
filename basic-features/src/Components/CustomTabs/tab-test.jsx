@@ -33,9 +33,6 @@ export default function TabsTest() {
         }
     ];
 
-    const handleIndexChange = (currentTabIndex) => {
-        console.log('currentTabIndex', currentTabIndex)
-    }
 
-    return <Tabs tabsDetails={tabs} onChange={handleIndexChange} />;
+    return <Tabs tabsDetails={tabs} />;
 }

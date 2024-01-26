@@ -1,7 +1,7 @@
 import { useState } from "react"
 import MenuList from "./menu-list"
 
-export default function MenuItem({menuItem, key}) {
+export default function MenuItem({menuItem, uniqueId}) {
 
     const [expandedChildren, setExpandedChildren] = useState({})
 
@@ -11,9 +11,8 @@ export default function MenuItem({menuItem, key}) {
             [getCurrentLabel] : !expandedChildren[getCurrentLabel]
         })
     }
-    console.log('item: ', menuItem)
     return (
-        <li className="menu-item" key={key}>
+        <li className="menu-item" key={uniqueId}>
             <span>
                 <p>{menuItem.label}</p>
                 {

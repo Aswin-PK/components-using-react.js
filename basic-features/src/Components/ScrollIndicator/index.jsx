@@ -18,8 +18,7 @@ export default function ScrollIndicator() {
             window.removeEventListener('scroll', () => {})
         }
     },[])
-
-    console.log('scrollPercentage :', scrollPercentage)
+    
     return <div className="scroll-indicator-container">
         <div className="scrollbarcontainer">
             <div className="scrollbar" style={{width: `${scrollPercentage}%`}}></div>

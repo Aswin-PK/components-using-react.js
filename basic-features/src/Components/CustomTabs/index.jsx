@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import './styles.css'
 
-export default function Tabs({tabsDetails, onChange}) {
+export default function Tabs({tabsDetails}) {
 
     const [currentTabIndex, setCurrentTabIndex] = useState(0)
 
     const handleTabClick = (getCurrentIndex) => {
         setCurrentTabIndex(getCurrentIndex);
-        onChange(getCurrentIndex);
     }
 
     return <div className="custom-tab-container">
