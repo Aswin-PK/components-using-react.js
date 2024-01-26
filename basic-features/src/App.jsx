@@ -9,6 +9,7 @@ import QRCodeGenerator from './Components/QRCodeGenerator'
 import ThemeChanger from './Components/ThemeChange'
 import ScrollIndicator from './Components/ScrollIndicator'
 import TabsTest from './Components/CustomTabs/tab-test'
+import PopupModal from './Components/PopupModal'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <ThemeChanger />
       <ScrollIndicator />
       <TabsTest />
+      <PopupModal />
     </>
   )
 }
