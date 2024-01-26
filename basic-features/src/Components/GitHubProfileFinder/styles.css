@@ -1,0 +1,111 @@
+.github-container {
+    height: 80svh;
+    background-color: #f4f4f4;
+    padding-top: 2rem;
+}
+
+.github-profile-container {
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.github-container .heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.github-profile-container .input-read-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.github-profile-container .input-read-container > * {
+    padding: 0 0.5rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    box-shadow: 0px 0px 10px 3px #e7e7e7;
+}
+.github-profile-container .input-read-container input {
+    width: 15rem;
+    outline: none;
+}
+.input-read-container input:focus {
+    border: 1px solid #5ab5ff;
+}
+.github-profile-container .input-read-container button {
+    cursor: pointer;
+    padding: 0 2rem;
+    background-color: #4d9dff;
+    color: #f2f2f2;
+}
+.input-read-container button:hover {
+    /* transform: scale(1.04); */
+    background-color: #388ffa;
+}
+
+.github-profile-container .result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid #5ab5ff;
+    box-shadow: 2px 2px 10px 5px #e7e7e7;
+}
+.profile-box {
+    background-color: blue;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.profile-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.result-container .user-details {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.result-container .user-details li,
+.user-details .connection-details {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #1e1e1ec8;
+}
+
+.user-details .user-name a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.user-details .user-bio {
+    font-size: 1rem;
+    max-width: 25rem;
+    text-align: justify;
+}
+
+.user-details .connection-details > span {
+    background: linear-gradient(to right,#479bef, #a53eff);
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.result-container .user-details li p{
+    color: rgba(175, 175, 175, 0.751);
+}

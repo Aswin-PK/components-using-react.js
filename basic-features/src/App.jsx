@@ -10,6 +10,7 @@ import ThemeChanger from './Components/ThemeChange'
 import ScrollIndicator from './Components/ScrollIndicator'
 import TabsTest from './Components/CustomTabs/tab-test'
 import PopupModal from './Components/PopupModal'
+import GitHubProfileFinder from './Components/GitHubProfileFinder'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <ScrollIndicator />
       <TabsTest />
       <PopupModal />
+      <GitHubProfileFinder />
     </>
   )
 }
