@@ -1,0 +1,38 @@
+.tic-tac-toe-container {
+    min-height: 70svh;
+    padding: 2rem;
+    background-color: rgb(151, 204, 116);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tic-tac-toe-container .game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+.game-container .box {
+    height: 6rem;
+    width: 6rem;
+    font-family: 'Arial';
+    font-size: 2.2rem;
+    background-color: rgb(233, 241, 233);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tic-tac-toe-container .restart {
+    padding: 0.5rem 3rem;
+    border-radius: 0.4rem;
+    border: none;
+    color: #f2f2f2;
+    background-color: rgb(41, 184, 41);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.tic-tac-toe-container .restart:hover {
+    background-color: rgb(36, 157, 36);
+}
