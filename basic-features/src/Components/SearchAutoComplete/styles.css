@@ -1,0 +1,39 @@
+.search-auto-complete-container {
+    min-height: 50svh;
+    background-color: rgb(198, 237, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-auto-complete-container .input-container {
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-auto-complete-container .input-container input {
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid #9aa1ff;
+    padding: 0 0.3rem;
+}
+.search-auto-complete-container .filtered-users {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.search-auto-complete-container .filtered-users li {
+    height: 1.4rem;
+    width: 10rem;
+    background-color: rgb(240, 240, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.filtered-users li:hover {
+    background-color: #abd5ff;
+}

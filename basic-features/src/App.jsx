@@ -11,6 +11,7 @@ import ScrollIndicator from './Components/ScrollIndicator'
 import TabsTest from './Components/CustomTabs/tab-test'
 import PopupModal from './Components/PopupModal'
 import GitHubProfileFinder from './Components/GitHubProfileFinder'
+import SearchAutoComplete from './Components/SearchAutoComplete'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <TabsTest />
       <PopupModal />
       <GitHubProfileFinder />
+      <SearchAutoComplete />
     </>
   )
 }
