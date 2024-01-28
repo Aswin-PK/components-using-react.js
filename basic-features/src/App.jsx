@@ -17,6 +17,7 @@ import TicTacToe from './Components/TicTacToe'
 // import FeatureFlags from './Components/FeatureFlag'
 import UseFetchCustomHook from './Components/UseFetchCustomHook/test'
 import UseOutsideClickHook from './Components/UseOutsideClickHook'
+import UseWindowResizeHook from './Components/UseWindowResizeHook/test'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       </FeatureFlagsGlobalState> */}
       <UseFetchCustomHook />
       <UseOutsideClickHook />
+      <UseWindowResizeHook />
     </>
   )
 }
