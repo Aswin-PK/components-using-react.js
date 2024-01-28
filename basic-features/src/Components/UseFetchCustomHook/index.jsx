@@ -19,7 +19,6 @@ export default function UseFetch(url, options={}) {
         }
     }
 
-    console.log(data, loading, error)
 
     useEffect(()=> {
         fetchData();

@@ -4,7 +4,6 @@ export default function UseOutsideClick(ref, handler) {
 
     useEffect(() => {
         function listener(event) {
-            console.log('ref.current', !ref.current)
             if(!ref.current || ref.current.contains(event.target)) return
             handler(event)
         }
