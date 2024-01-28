@@ -1,0 +1,26 @@
+.use-fetch-hook-container {
+    background-color: rgb(231, 231, 255);
+    min-height: 70svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fetch-results {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+}
+.fetch-results span {
+    height: 3rem;
+    width: 13rem;
+    background-color: #49bfff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+.fetch-results span:hover {
+    background-color: #2eb6ff;
+}
